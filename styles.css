@@ -312,7 +312,7 @@ nth-child */
     background-color: whitesmoke;
     z-index: 0;
     margin: 0 auto; 
-    height: 100vh; 
+    height: 150vh; 
     padding: 40px 20px; 
    /* box-sizing: border-box;*/ /*means any width or height is applied to 
     a box containing the content+padding and not just content. It avoids the extra sizing tht usually comes when we
@@ -330,7 +330,6 @@ nth-child */
     top: 20%;
     left: 50%;;
     width: 40%;
-    z-index: 1;
     font-size:25px;
 }
 
@@ -382,5 +381,15 @@ nth-child */
     color: black;
     font-weight: 800;
     cursor: pointer;
+}
+
+.productButton{
+    height: 30px;
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
 }
 
