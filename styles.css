@@ -327,8 +327,50 @@ nth-child */
 
 .productDetails{
     position: absolute;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 50%;;
     width: 40%;
-    text-align: center;
     z-index: 1;
+    font-size:25px;
 }
+
+.productTitle{
+    font-size: 100px;
+    font-weight: 800px;
+}
+.productDesc{
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(82, 76, 76);
+    margin-bottom: 50px;
+}
+
+.colors , .sizes{
+    display: flex;
+    margin: 20px; /*this is margin for colorssss not color*/
+}
+
+.color{
+    height: 90px;
+    width: 90px;
+    background-color: black;
+    margin: 20px 20px 20px 0px; /*margin for color not colors*/
+    align-items: center;
+    border-radius: 20%;
+}
+
+.color:last-child{     /*color:last is correct but color:     last is incorrect*/
+    background-color: lightpink;
+}
+.color:first-child{
+    background-color:#9c6f44;
+}
+.size{
+    height: 90px;
+    width: 90px;
+    margin-right:20px;
+    align-items: center;
+    border-radius: 20%;
+    border: 2px solid black;
+}
+
