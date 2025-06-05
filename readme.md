@@ -208,3 +208,5 @@
 
 ### initial thoughts
 - we might use wrapper.style.transform right??
+
+https://github.com/cisa-cell/shoe-e-commerce-website/blob/0b9f14b81b147030a8145db484109c490dfcc967/styles.css#L328-L336
