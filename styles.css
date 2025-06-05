@@ -266,9 +266,10 @@ nth-child */
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding: 50px 100px;
-    height: auto; /* Changed from 100vh to auto */
-    box-sizing: border-box;
+    /* padding: 50px 100px; */
+    overflow: hidden;
+    height: 70vh; /* Changed from 100vh to auto */
+    /* box-sizing: border-box; */
 }
 .features .feature{
     display:flex;
@@ -306,18 +307,28 @@ nth-child */
 }
 /* ---------------------------------------------------product------------------------------------------------------------ */
 .product{
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
     position: relative; 
     background-color: whitesmoke;
-    width: 100%; /* Changed from 100vw to 100% */
-    max-width: 1200px; /* Optional: limit max width for large screens */
-    margin: 0 auto; /* Center the product section */
-    height: auto; /* Changed from 100vh to auto */
-    padding: 40px 20px; /* Add padding for spacing */
-    box-sizing: border-box;
-}
+    z-index: 0;
+    margin: 0 auto; 
+    height: 100vh; 
+    padding: 40px 20px; 
+   /* box-sizing: border-box;*/ /*means any width or height is applied to 
+    a box containing the content+padding and not just content. It avoids the extra sizing tht usually comes when we
+    specify padding*/
+}   
 
 .product .productImg{
     position: absolute;
     width: 50%;
 
+}
+
+.productDetails{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    text-align: center;
+    z-index: 1;
 }
