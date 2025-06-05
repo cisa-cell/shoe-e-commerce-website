@@ -210,3 +210,8 @@
 - we might use wrapper.style.transform right??
 
 https://github.com/cisa-cell/shoe-e-commerce-website/blob/0b9f14b81b147030a8145db484109c490dfcc967/styles.css#L328-L336
+
+- the sizes came in the top left corner of their respective boxes because we left out daj (display,align-items,justify )
+
+- it's imp that the color boxes and the size boxes are the same height and width and that the space between is the same. 
+    - we added border of the same color to each of the color boxes because I realised that after i put the border for the size boxes, even if the rest of the dimensions were the same, the space between did not match.. so I simply made it even and added a border.
