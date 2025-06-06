@@ -335,7 +335,7 @@ nth-child */
 
 .productTitle{
     font-size: 100px;
-    font-weight: 800px;
+    font-weight: 1000px;
 }
 .productDesc{
     font-size: 30px;
@@ -384,12 +384,23 @@ nth-child */
 }
 
 .productButton{
-    height: 30px;
+    height: 100px; /*changed from 20 to 100px.. it worked.. the button is no longer getting cut*/
     width: 200px;
     background-color: black;
     color: white;
     font-size: 30px;
     margin: 20px;
     padding: 20px;
+    border: 6px solid black;
+    border-radius: 9%;
+    cursor: pointer;
+    font-weight: 200;
+    /* box-sizing: border-box; not helping */
+}
+
+.productButton:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
 }
 
