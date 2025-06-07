@@ -1,7 +1,8 @@
 
 
 //-------------------------------------------------------------------------
-
+//! the document.addEventListener("DOMContentLoaded", () => { is very imp. Give all event listeners 
+//! only after this code i.e nest in this code
 document.addEventListener("DOMContentLoaded", () => {
         let products=[
         {
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     img: "images/air_force_light_pink-removebg-preview.png"
                 },
                 {
-                    code:"brown",
+                    code:"#9c6f44",
                     img:"images/air_force_coffee-removebg-preview.png"
                 }
             ]
@@ -27,11 +28,11 @@ document.addEventListener("DOMContentLoaded", () => {
             desc:"crater is a type of shoe that is designed for outdoor activities. It features a rugged sole and a durable upper for maximum protection and support.",
             colors:[
                 {
-                    code:"pink",
+                    code:"rgb(207, 167, 173)",
                     img: "images/crater_pink-removebg-preview.png"
                 },
                 {
-                    code:"lightgreen",
+                    code:"rgba(194, 225, 172, 0.895)",
                     img:"images/crater_light_green-removebg-preview.png"
                 }
             ]
@@ -44,11 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
             desc:"hippie is a type of shoe that is designed for outdoor activities. It features a rugged sole and a durable upper for maximum protection and support.",
             colors:[
                 {
-                    code:"brown",
+                    code:"burlywood",
                     img: "images/hippie-removebg-preview.png"
                 },
                 {
-                    code:"white",
+                    code:"rgb(230, 218, 202)",
                     img:"images/hippie_white-removebg-preview.png"
                 }
             ]
@@ -61,11 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
             desc:"blazer is a type of shoe that is designed for casual wear. It features a low-top design and a cushioned sole for maximum comfort.",
             colors:[
                 {
-                    code:"pink",
+                    code:"lightpink",
                     img: "images/blazer_pink-removebg-preview.png"
                 },
                 {
-                    code:"blue",
+                    code:"teal",
                     img:"images/blazer_blue-removebg-preview.png"
                 }
             ]
@@ -77,11 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
             desc:"air jordan is a type of shoe that is designed for basketball players. It features a high-top design for ankle support and a cushioned sole for maximum comfort.",
             colors:[
                 {
-                    code:"brown",
+                    code:"rgb(230, 218, 202)",
                     img: "images/jordan_brown-removebg-preview.png"
                 },
                 {
-                    code:"blue",
+                    code:"rgb(116, 168, 228)",
                     img:"images/jordan_blue-removebg-preview.png"
                 }
             ]
@@ -110,12 +111,14 @@ document.addEventListener("DOMContentLoaded", () => {
             currentProduct=products[index];
 
             //changing details
-            currentProductImg.src=currentProduct.colors[0].img;
+            currentProductImg.src=currentProduct.colors[0].img; //identify where to use dots and []
             currentProductTitle.textContent=currentProduct.title;   
-            currentProductPrice.textContent=`$${currentProduct.price}`;
+            currentProductPrice.textContent=`$${currentProduct.price}`; 
+            //or =`$`+currentProduct.price
             currentProductDesc.textContent=currentProduct.desc; 
             currentProductColors.forEach((color, colorIndex) => {
                 color.style.backgroundColor = currentProduct.colors[colorIndex].code;
+                color.style.border=`3px solid ${currentProduct.colors[colorIndex].code}`;
             });
 
         });

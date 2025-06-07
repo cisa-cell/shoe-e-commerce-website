@@ -215,3 +215,7 @@ https://github.com/cisa-cell/shoe-e-commerce-website/blob/0b9f14b81b147030a8145d
 
 - it's imp that the color boxes and the size boxes are the same height and width and that the space between is the same. 
     - we added border of the same color to each of the color boxes because I realised that after i put the border for the size boxes, even if the rest of the dimensions were the same, the space between did not match.. so I simply made it even and added a border.
+
+- an issue came up because we put the border like this.<br>
+<img src="imagesForReadMe/border_color_issue.png" alt="border color not changing" width="300">
+- so now we will change the border colors along with the background color of the currentProduct
