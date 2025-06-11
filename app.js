@@ -123,16 +123,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 //     currentProductImg.src = currentProduct.colors[colorIndex].img;
                 // });
             });
+
+            // colors.forEach((color, diffindex) => { color does not exist.... currentProductColors is what we need
+            currentProductColors.forEach((color, diffindex) => {
+                color.addEventListener("click", () => {
+                    //change current product image
+                    currentProductImg.src = currentProduct.colors[diffindex].img;
+                });
+            });
+           
             
 
         });
         
-    });
-    colors.forEach((color, diffindex) => {
-        color.addEventListener("click", () => {
-            //change current product image
-            currentProductImg.src = currentProduct.colors[diffindex].img;
-        });
     });
 
 // ? ----------------------------------------------document.addEventListener-------------------------------------------------------------------------
