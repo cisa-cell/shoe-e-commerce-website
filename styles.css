@@ -1,3 +1,12 @@
+html{
+    scroll-behavior: smooth;
+    /* smooth scrolling */
+    /* this is not working in firefox */
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior */
+    /*looking at the documentation, it looks like this style property works in the version 36 of mozilla 
+    firefox*/
+}
+
 body{
     font-family:'Lato',sans-serif;
     padding:0;
@@ -368,6 +377,7 @@ nth-child */
 .color:first-child{
     background-color:#9c6f44;
     border: 3px solid #9c6f44;
+    
 }
 .size{
     display:flex;
@@ -404,3 +414,19 @@ nth-child */
     transition: 0.5s;
 }
 
+
+    /*crater*/
+    /* background-color: rgba(194, 225, 172, 0.895);
+    background-color: rgb(207, 167, 173); */
+
+    /*blazer*/
+    /* background-color:teal;
+    background-color: lightpink; */
+
+    /*hippie*/
+    /* background-color: rgb(230, 218, 202);
+    background-color: burlywood; */
+
+    /*jordan*/
+    /* background-color: rgb(116, 168, 228);
+    background-color: rgb(230, 218, 202); */

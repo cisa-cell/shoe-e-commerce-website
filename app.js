@@ -119,12 +119,21 @@ document.addEventListener("DOMContentLoaded", () => {
             currentProductColors.forEach((color, colorIndex) => {
                 color.style.backgroundColor = currentProduct.colors[colorIndex].code;
                 color.style.border=`3px solid ${currentProduct.colors[colorIndex].code}`;
+                // color.addEventListener("click", () => {
+                //     currentProductImg.src = currentProduct.colors[colorIndex].img;
+                // });
             });
+            
 
         });
+        
     });
-});
-
+    colors.forEach((color, diffindex) => {
+        color.addEventListener("click", () => {
+            //change current product image
+            currentProductImg.src = currentProduct.colors[diffindex].img;
+        });
+    });
 
 // ? ----------------------------------------------document.addEventListener-------------------------------------------------------------------------
 // - is domcontentloaded smth we made up?
@@ -158,4 +167,14 @@ button is specified then it is target phase.
 .for the bubble phase, we will have to have called the outer 
 and target element and then call the middle or outer
 element*/
+
+
+
+// -------------------------size selection-----------------------------
+   
+
+
+
+});
+
 

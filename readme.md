@@ -219,3 +219,15 @@ https://github.com/cisa-cell/shoe-e-commerce-website/blob/0b9f14b81b147030a8145d
 - an issue came up because we put the border like this.<br>
 <img src="imagesForReadMe/border_color_issue.png" alt="border color not changing" width="300">
 - so now we will change the border colors along with the background color of the currentProduct
+
+##### what's the difference between transition and transform
+
+- How they work together
+    - You use transform to move/scale/rotate an element.
+    - You use transition to animate the change when you update the transform property.
+- In your slider:
+    - transform moves the slider.
+    - transition makes the movement smooth.
+- when moving across different sections of a web page using anchor element, 
+    - we are not using transform but rather anchor i.e we cannot apply transition to anchor since it does not contain any transform properties. That is where the html selector comes into play
+    (at the beginning of the styles sheet)
