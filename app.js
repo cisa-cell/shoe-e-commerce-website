@@ -119,18 +119,11 @@ document.addEventListener("DOMContentLoaded", () => {
             currentProductColors.forEach((color, colorIndex) => {
                 color.style.backgroundColor = currentProduct.colors[colorIndex].code;
                 color.style.border=`3px solid ${currentProduct.colors[colorIndex].code}`;
-                // color.addEventListener("click", () => {
-                //     currentProductImg.src = currentProduct.colors[colorIndex].img;
-                // });
-            });
-
-            // colors.forEach((color, diffindex) => { color does not exist.... currentProductColors is what we need
-            currentProductColors.forEach((color, diffindex) => {
                 color.addEventListener("click", () => {
-                    //change current product image
-                    currentProductImg.src = currentProduct.colors[diffindex].img;
+                    currentProductImg.src = currentProduct.colors[colorIndex].img;
                 });
             });
+
            
             
 
