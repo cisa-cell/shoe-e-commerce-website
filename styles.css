@@ -328,10 +328,14 @@ nth-child */
     specify padding*/
 }   
 
-.product .productImg{
+.product .productImg {
     position: absolute;
-    width: 50%;
-
+    width: 1090px;
+    height: 1090px;
+    object-fit: contain;
+    left: 6%;
+    top: 6%;
+    /* Standardized size and alignment for all product images */
 }
 
 .productDetails{
