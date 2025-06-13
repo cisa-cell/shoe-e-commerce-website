@@ -130,9 +130,22 @@ document.addEventListener("DOMContentLoaded", () => {
     currentProductColors.forEach((color, colorIndex) => {
         color.addEventListener("click", () => {
         currentProductImg.src = currentProduct.colors[colorIndex].img;
-        });        
+        });   
+        
+    //size should turn black when clicked
+    currentProductSizes.forEach((size) => {
+        size.addEventListener("click", () => {
+            currentProductSizes.forEach((size) => {
+                size.style.backgroundColor = "white";
+                size.style.color = "black";
+            });
+            size.style.backgroundColor = "black";
+            size.style.color = "white";
+        });
 
     });
+
+});
 
     //trying out git status....ignore this
     
