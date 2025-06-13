@@ -139,13 +139,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 size.style.backgroundColor = "white";
                 size.style.color = "black";
             });
+            //everytime you click on a size, 
+            // !everyone
+            //  will be turned white
+            //and only then the one clicked will be turned black
             size.style.backgroundColor = "black";
             size.style.color = "white";
+            //understand that the size of the forEacch is control element of the general arry
+            //but the size in the addEventListener is the one that is clicked i.g
+            //forEach,size,forEach,size
         });
 
     });
 
-});
+}); //when i forgot these 2 symbols, clicking on the menuItem did not trigger the slider or the color toggles
 
     //trying out git status....ignore this
     
