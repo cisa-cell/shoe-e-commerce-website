@@ -373,12 +373,12 @@ nth-child */
     
 }
 
-.color:last-child{     /*color:last is correct but color:     last is incorrect*/
+.color:first-child{     /*color:last is correct but color:     last is incorrect*/
     background-color: lightpink;
     border: 3px solid lightpink;
 
 }
-.color:first-child{
+.color:last-child{
     background-color:#9c6f44;
     border: 3px solid #9c6f44;
     
