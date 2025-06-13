@@ -119,17 +119,21 @@ document.addEventListener("DOMContentLoaded", () => {
             currentProductColors.forEach((color, colorIndex) => {
                 color.style.backgroundColor = currentProduct.colors[colorIndex].code;
                 color.style.border=`3px solid ${currentProduct.colors[colorIndex].code}`;
-                color.addEventListener("click", () => {
-                    currentProductImg.src = currentProduct.colors[colorIndex].img;
-                });
-            });
 
-           
-            
+            });
 
         });
         
     });
+    //making the toogle color option independent of the clicking of the menu items
+
+    currentProductColors.forEach((color, colorIndex) => {
+        color.addEventListener("click", () => {
+        currentProductImg.src = currentProduct.colors[colorIndex].img;
+        });        
+
+    });
+    
 
 // ? ----------------------------------------------document.addEventListener-------------------------------------------------------------------------
 // - is domcontentloaded smth we made up?
