@@ -328,6 +328,7 @@ nth-child */
     specify padding*/
 }   
 
+
 .product .productImg {
     position: absolute;
     width: 1090px;
@@ -418,6 +419,47 @@ nth-child */
     transition: 0.5s;
 }
 
+.payment{
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top:2700px; /*so that the box will come over product page..if we gave top:0, 
+    the box comes on top of the slider*/
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 4px 27px 16px rgba(242,219,219,0.75);
+-webkit-box-shadow: 0px 4px 27px 16px rgba(242,219,219,0.75);
+-moz-box-shadow: 0px 4px 27px 16px rgba(242,219,219,0.75);
+
+}
+label{
+    font-size: 30px;
+    color: gray;
+    margin-bottom: 10px;
+}
+.payTitle{
+    font-size: 50px;
+    font-weight: 1000;
+    color: gray;
+}
+.payInput{
+    height: 50px;
+    width: 900px;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+}
+.payInput::placeholder{
+    color: lightgray;
+}
 
     /*crater*/
     /* background-color: rgba(194, 225, 172, 0.895);
