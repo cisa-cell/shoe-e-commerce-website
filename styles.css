@@ -457,20 +457,32 @@ label{
     border: none; /*otherwise all borders except border bottom will be standard input balck border. You would
     not have had this problem of the other borders appearing black if we were not
     dealing with input boxes i.e ordinary divs*/
-    border-bottom: 2px solid lightgray;
+    border-bottom: 2px solid rgb(134, 129, 129);
 }
 .payInput::placeholder{
     color: lightgray;
 }
 
 .icons{
+    margin-top: 10px;
     display: flex;
+    margin-bottom: 10px;
 }
 .icon {
     width: 60px;
     height: 60px;
     object-fit: contain; 
     margin-right: 20px;
+}
+
+.cardDetails{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sm{
+    width:30%;
 }
 
     /*crater*/
