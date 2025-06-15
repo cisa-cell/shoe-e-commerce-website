@@ -548,7 +548,8 @@ label{
     0px 40px rgba(240, 46, 170, 0.1),
     0px 50px rgba(240, 46, 170, 0.05);
   box-shadow: var(--shadow);
-  margin:70px;
+  margin:70px; /*imp because for some reason, the shadow part is avoided 
+  because somehow overflow:hidden is employed for this div.. idk how*/
 }
 
     /*crater*/
