@@ -537,7 +537,7 @@ label{
                  0px 50px rgba(240, 46, 170, 0.05);
   margin:70px; 
 }
-.galleryImg:nth-of-type(1){
+.middle{
   box-shadow:   0px 10px rgba(46, 204, 240, 0.71),
                 0px 20px rgba(102, 198, 220, 0.594),
                 0px 30px rgba(46, 204, 240, 0.345),
@@ -568,3 +568,22 @@ label{
     /*jordan*/
     /* background-color: rgb(116, 168, 228);
     background-color: rgb(230, 218, 202); */
+.newSeason{
+    display: flex;
+    background-color:black;
+    color:white;
+}
+.nsItem{
+    flex:1;
+    display: flex;
+    align-content: center; /*does not align text in the center..it is smth related to display:flex*/
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 50px;
+}
+
+.nsItem button{
+    width:600px;
+    height:60px;
+}
