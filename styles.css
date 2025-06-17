@@ -581,6 +581,7 @@ label{
     flex-direction: column;
     text-align: center;
     font-size: 50px;
+    padding: 50px;
 }
 
 .nsItem button{
@@ -590,5 +591,4 @@ label{
 
 .nsImg{
     width: 100%;
-    padding: 50px;
 }
