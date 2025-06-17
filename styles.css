@@ -537,7 +537,7 @@ label{
                  0px 50px rgba(240, 46, 170, 0.05);
   margin:70px; 
 }
-img.galleryImg:nth-of-type(2){
+.galleryImg:nth-of-type(1){
   box-shadow:   0px 10px rgba(46, 204, 240, 0.71),
                 0px 20px rgba(102, 198, 220, 0.594),
                 0px 30px rgba(46, 204, 240, 0.345),
