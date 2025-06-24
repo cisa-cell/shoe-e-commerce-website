@@ -27,6 +27,7 @@ nav{
     
     
 }
+
 .navTop .limitedOffer{
     border-bottom:2px solid green ;
     font-size: 30px;
@@ -38,7 +39,6 @@ nav{
     justify-content:space-between;
     align-items:center;
     margin-right: 150px;
-    background-color: red;
 }
 .navTop .fa-magnifying-glass{
     font-size:40px;
@@ -684,7 +684,7 @@ footer{
     align-items: center;
 }
 
-@media screen and (max-width:480px) {
+/* @media screen and (max-width:300px) {
     nav{
         padding: 20px;;
     }
@@ -693,10 +693,10 @@ footer{
         flex-direction: column;
         background-color: red;
     }
-    /*
+   
     .navTop img{
         width:120px;
-        height: auto; */
+        height: auto; 
     }
     .search{
         display: none;
@@ -706,4 +706,4 @@ footer{
         right: 0px;
         top: 18px;
         padding:0px 2px 0px 0px;
-    }
+    } */
