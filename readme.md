@@ -1,3 +1,7 @@
+
+built using https://www.youtube.com/watch?v=b3Gqq_k-g24&t=4608s
+all credits to lama dev
+
 >horizontal distribution-
 >outerclass, display:flex,align-items,jcc(daj)
 >inner class, items
