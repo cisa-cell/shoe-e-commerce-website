@@ -1,3 +1,6 @@
+*{
+        box-sizing: border-box;
+    }
 html{
     scroll-behavior: smooth;
     /* smooth scrolling */
@@ -17,7 +20,10 @@ nav{
     background-color: black;
     color: white;
     padding:20px 50px;
-    width:100%;
+    width:auto; 
+    /* the width auto made the nav bar not overflow but there
+    is still extra space in the left i.e you can still scroll to the 
+    left */
     
     
 }
@@ -25,12 +31,14 @@ nav{
     border-bottom:2px solid green ;
     font-size: 30px;
     margin-left:20px;
+    padding: 1px;
 }
 .navTop{
     display:flex;
     justify-content:space-between;
     align-items:center;
     margin-right: 150px;
+    background-color: red;
 }
 .navTop .fa-magnifying-glass{
     font-size:40px;
@@ -675,3 +683,27 @@ footer{
     gap: 20px; /* Adjust the value for more or less space */
     align-items: center;
 }
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 20px;;
+    }
+    .navTop{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+    /*
+    .navTop img{
+        width:120px;
+        height: auto; */
+    }
+    .search{
+        display: none;
+    }
+    .navTop .limitedOffer{
+        position: absolute;
+        right: 0px;
+        top: 18px;
+        padding:0px 2px 0px 0px;
+    }
